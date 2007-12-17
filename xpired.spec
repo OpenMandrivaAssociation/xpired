@@ -10,7 +10,6 @@ Source0: %{name}-%{version}-linux_source.tar.bz2
 URL: http://xpired.temnet.org/
 License: GPL
 Group: Games/Arcade
-BuildRoot: %{_tmppath}/%{name}-buildroot
 BuildRequires: libSDL_gfx-devel >= 2.0.8
 BuildRequires: libSDL_mixer-devel 
 BuildRequires: libSDL_image-devel 
