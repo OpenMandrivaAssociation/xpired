@@ -34,15 +34,6 @@ make install PREFIX=%buildroot/%_prefix SHARE_PREFIX=%buildroot/%_gamesdatadir/x
 mkdir -p %buildroot/%_gamesbindir
 mv %buildroot/%_bindir/* %buildroot/%_gamesbindir
 
-mkdir -p $RPM_BUILD_ROOT%{_menudir}
-cat <<EOF >$RPM_BUILD_ROOT%{_menudir}/%name
-?package(%{name}):command="%{_gamesbindir}/%name" \
-		  icon="arcade_section.png" \
-		  needs="x11" \
-		  section="More Applications/Games/Arcade" \
-		  title="X-Pired" \
-		  longtitle="Action-puzzle game" xdg="true"
-EOF
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}.desktop << EOF
 [Desktop Entry]
@@ -71,6 +62,5 @@ rm -rf $RPM_BUILD_ROOT
 %_datadir/applications/mandriva*
 %_gamesbindir/*
 %_gamesdatadir/*
-%_menudir/%name
 
 
