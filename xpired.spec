@@ -16,7 +16,6 @@ BuildRequires: libSDL_mixer-devel
 BuildRequires: libSDL_image-devel 
 
 %description
-
 X-Pired is an action puzzle game. The goal of the game in each level
 is to reach the exit square, avoiding exploding barrels and other
 deadly stuff.
