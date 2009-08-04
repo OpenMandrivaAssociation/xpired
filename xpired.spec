@@ -1,6 +1,6 @@
 %define name xpired
 %define version 1.22
-%define release %mkrel 16
+%define release %mkrel 17
 
 Summary: Action puzzle game
 Name: %{name}
@@ -8,7 +8,7 @@ Version: %{version}
 Release: %{release}
 Source0: %{name}-%{version}-linux_source.tar.bz2
 URL: http://xpired.temnet.org/
-License: GPL
+License: GPLv2+
 Group: Games/Arcade
 BuildRoot: %{_tmppath}/%{name}-buildroot
 BuildRequires: libSDL_gfx-devel >= 2.0.8
@@ -43,7 +43,7 @@ Icon=arcade_section
 Terminal=false
 Type=Application
 StartupNotify=true
-Categories=X-MandrivaLinux-MoreApplications-Games-Arcade;Game;ArcadeGame;
+Categories=Game;ArcadeGame;
 EOF
 
 %clean
