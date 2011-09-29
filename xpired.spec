@@ -1,6 +1,6 @@
 %define name xpired
 %define version 1.22
-%define release %mkrel 18
+%define release %mkrel 19
 
 Summary: Action puzzle game
 Name: %{name}
