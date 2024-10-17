@@ -7,7 +7,7 @@ Name: %{name}
 Version: %{version}
 Release: %{release}
 Source0: %{name}-%{version}-linux_source.tar.bz2
-URL: http://xpired.temnet.org/
+URL: https://xpired.temnet.org/
 License: GPLv2+
 Group: Games/Arcade
 BuildRoot: %{_tmppath}/%{name}-buildroot
